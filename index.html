@@ -19,6 +19,11 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
       
+    <style>
+        body{
+            font-family: Montserrat;
+        }
+    </style>
 </head>
 <body>
     
@@ -39,10 +44,19 @@
         <div class="collapse navbar-collapse" id="navigation-example-2">
           <ul class="nav navbar-nav navbar-right">
             <li>
-                <a href="#" class="btn btn-simple">GitHub</a>
+                <a href="#" class="btn btn-simple">Home</a>
             </li>
             <li>
-                <a href="#" target="_blank" class="btn btn-simple"><i class="fa fa-facebook"></i></a>
+                <a href="#about" class="btn btn-simple">About</a>
+            </li>
+            <li>
+                <a href="#guidelines" class="btn btn-simple">Guidelines</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/dsckiet/" target="_blank" class="btn btn-simple"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="http://github.com/dsckiet" target="_blank" class="btn btn-simple"><i class="fa fa-github"></i></a>
             </li>
            </ul>
         </div><!-- /.navbar-collapse -->
@@ -55,28 +69,28 @@
     </div> -->
     
     <div class="wrapper">
-        <div class="landing-header" style="background-image: url('./assets/img/cover-background.jpeg');">
+        <div class="landing-header" style="background-image: url('./assets/img/background-cover.jpeg');">
             <div class="container">
                 <div class="motto col-lg-8" style="color: #fff; font-weight: 700;">
 
-                    <h1 class="title">Developer Students' Club - KIET</h1>
+                    <h2 class="title">Developer Students' Club - KIET</h2>
                     <hr>
-                    <p>Google collaborates with university students who are passionate about growing developer communities and support them
+                    <p><b>Google collaborates with university students who are passionate about growing developer communities and support them
                     with starting student clubs on their campuses.<br><br>
-                    DSCKIET is the official Google recognized students' club at KIET.</p>
+                    DSCKIET is the official Google recognized students' club at KIET.</b></p>
                     <br>
-                    <!-- <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn"><i class="fa fa-play"></i>Watch video</a> -->
-                    <a class="btn btn-lg btn-neutral">Register</a>
+                    <a href="https://goo.gl/forms/3KsK77zsggCLqwXi1" target="_blank" class="btn btn-lg btn-neutral">Register</a>
                     <br><br>
                 </div>
                 <div class="col-lg-4 motto">
-                    <img src="./assets/img/dsclogo.png" style="width: 100%;" alt="">
                     <br><br>
+                    <img src="./assets/img/dsclogo.png" style="width: 100%;" alt="">
+                    <br><br><br><br>
                 </div>
             </div>    
         </div>
 
-        <div class="main">
+        <div class="main" id="about"> 
             <div class="section landing-section" style="background:#fff; color: #333; font-weight: 700;">
                 <div class="container">
                     <div class="row">
@@ -95,9 +109,11 @@
                         </div>
                     </div>
                 </div>
-            </div>  
+            </div>
 
-            <div class="section section-light landing-section" style="background:#fff; color: #333; font-weight: 700;">
+            <div class="parallax"></div>
+
+            <div id="guidelines" class="section section-light landing-section" style="background:#fff; color: #333; font-weight: 700;">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5">
@@ -106,42 +122,19 @@
                         <div class="col-lg-7 tab">
                             <h2><b>DSC Guidelines</b></h2>
                             <br />
-                            <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, consequuntur vero animi accusamus iusto dignissimos debitis natus obcaecati inventore rem. Eveniet maxime ullam sed iusto natus, earum ipsam deserunt laudantium vero aliquam explicabo voluptatum inventore dicta harum deleniti laborum cupiditate rem placeat accusamus voluptatibus facilis eos facere quae. Eveniet, blanditiis.</b></p>
+                            <p><b>
+                                <ul>
+                                    <li>Grow your knowledge on developer technologies and more through peer to peer workshops and events.</li><br>
+                                    <li>Gain relevant industry experience by solving problems for local organizations with technology based solutions.</li><br>
+                                    <li>Showcase your prototypes and solutions to your local community and industry leaders.</li><br>
+                                </ul>
+                            </b></p>
                             
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="section landing-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h2 class="text-center">Keep in touch?</h2>
-                            <form class="contact-form">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label>Name</label>
-                                        <input class="form-control" placeholder="Name">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>Email</label>
-                                        <input class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                                <label>Message</label>
-                                <textarea class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..."></textarea>
-                                <div class="row">
-                                    <div class="col-md-4 col-md-offset-4">
-                                        <button class="btn btn-danger btn-block btn-lg btn-fill">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
         </div>     
     </div>
     
