@@ -34,7 +34,7 @@ body{
   background-image: url("../img/google-devs-parallax.png");
 
   /* Set a specific height */
-  height: 200px;
+  height: 400px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
