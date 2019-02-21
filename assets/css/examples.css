@@ -31,7 +31,7 @@ body{
 
 .parallax {
   /* The image used */
-  background-image: url("../img/google-devs-parallax.png");
+    background-image: url("../img/student-javascript-knowledge.png");
 
   /* Set a specific height */
   height: 400px;
