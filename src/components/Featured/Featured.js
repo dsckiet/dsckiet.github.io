@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 export default class Featured extends Component {
   render() {
+    const photoUrl = process.env.REACT_APP_PHOTO_URL;
     return (
       <div className="featured">
         <div className="container pt-4 pb-4">
@@ -13,24 +14,16 @@ export default class Featured extends Component {
               <div className="row">
                 <div className="col-md-3 col-sm-12">
                   <img
-                    src="./assets/images/front_illustration.png"
+                    src={`${photoUrl}${this.props.story.image}`}
                     width="100%"
                     alt=""
                   />
                 </div>
                 <div className="col-md-9 col-sm-12">
                   <h5 className="title" style={{ color: "#1A73E8" }}>
-                    Success Title
+                    {this.props.story.title}
                   </h5>
-                  <p className="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Explicabo accusamus veritatis quisquam magni sed cumque
-                    delectus animi beatae, accusantium provident?
-                    <br />
-                    <br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Commodi, et!
-                  </p>
+                  <p className="description">{this.props.story.description}</p>
 
                   <a
                     href="https://www.google.com"

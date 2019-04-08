@@ -5,6 +5,8 @@ import Featured from "../Featured/Featured";
 
 export default class Static extends Component {
   render() {
+    const { story, events } = this.props;
+
     return (
       <div className="fluid-container" style={{ paddingBottom: "0" }}>
         <div className="container">
@@ -180,11 +182,15 @@ export default class Static extends Component {
               </Link>
             </div>
             <br />
-            <Events />
+            <div className="row">
+              {events.map(event =>
+                event.status === 1 ? <Events event={event} /> : null
+              )}
+            </div>
           </div>
         </div>
 
-        <Featured />
+        <Featured story={story} />
 
         <div className="partners">
           <div className="container pt-4 pb-4">

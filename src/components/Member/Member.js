@@ -8,7 +8,7 @@ export default class Member extends Component {
       <div className="col-lg-3 col-md-4 col-sm-6 col-6 text-center member">
         <div className="card p-4 text-center">
           <img
-            src={`${photoUrl}${profile.photo.slice(1)}`}
+            src={`${photoUrl}${profile.photo}`}
             className="team-member"
             alt=""
           />

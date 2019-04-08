@@ -7,9 +7,9 @@ import TeamPage from "./components/TeamPage/TeamPage";
 import * as websiteApi from "./utils/websiteApi";
 class App extends Component {
   componentDidMount() {
-    websiteApi.getAbout().then(res => {
-      console.log(res);
-    });
+    // websiteApi.getAbout().then(res => {
+    //   console.log(res);
+    // });
   }
   render() {
     return (
