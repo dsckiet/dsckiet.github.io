@@ -40,37 +40,7 @@ export default class EventsPage extends Component {
                 Here are the recent 10 events. To know more about the past
                 events let us know at dsckiet@gmail.com.
               </p>
-              <div class="col-lg-12" style={{ padding: "0" }}>
-                <div class="card mt-4 p-4">
-                  <div class="row">
-                    <div class="col-md-3 col-sm-12">
-                      <img
-                        src="../assets/images/front_illustration.png"
-                        width="100%"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-md-9 col-sm-12">
-                      <h5 class="title" style={{ color: "#1A73E8" }}>
-                        Success Title
-                      </h5>
-                      <p class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Explicabo accusamus veritatis quisquam magni sed cumque
-                        delectus animi beatae, accusantium provident?
-                        <br />
-                        <br />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Commodi, et!
-                      </p>
-
-                      <a href="" class="btn btn-primary prime_btn">
-                        some link
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Events />
             </div>
           </div>
         </div>

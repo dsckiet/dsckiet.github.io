@@ -69,6 +69,7 @@ export default class Footer extends Component {
         </div>
 
         <div
+          id="contact"
           className="text-center"
           style={{
             color: "#fff",
