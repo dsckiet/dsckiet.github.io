@@ -25,12 +25,12 @@ export default class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto nav justify-content-end custom_nav">
               <li className="nav-item">
-                <Link className="nav-link active" href="#">
+                <Link className="nav-link active" to="/">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="/events">
                   Events
                 </Link>
               </li>
