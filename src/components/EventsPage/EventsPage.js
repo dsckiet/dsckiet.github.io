@@ -2,9 +2,29 @@ import React, { Component } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import Events from "../Events/Events";
+import * as websiteAPI from "./../../utils/websiteApi";
+import sortBy from "sort-by";
 
 export default class EventsPage extends Component {
+  state = {
+    message: "",
+    upcoming: [],
+    past: []
+  };
+
+  componentDidMount() {
+    websiteAPI.getEvents().then(res => {
+      this.setState({
+        message: res.message,
+        upcoming: res.upcomingevents,
+        past: res.pastevents
+      });
+    });
+  }
+
   render() {
+    let showingPastEvents = this.state.past;
+    showingPastEvents.sort(sortBy("startDate"));
     return (
       <div>
         <Navbar />
@@ -25,7 +45,11 @@ export default class EventsPage extends Component {
                 their projects.
               </p>
               <br />
-              <Events />
+              <div className="row">
+                {showingPastEvents.map(event =>
+                  event.status === 1 ? <Events event={event} /> : null
+                )}
+              </div>
             </div>
           </div>
 
@@ -40,7 +64,11 @@ export default class EventsPage extends Component {
                 Here are the recent 10 events. To know more about the past
                 events let us know at dsckiet@gmail.com.
               </p>
-              <Events />
+              <div className="row">
+                {showingPastEvents.map(event =>
+                  event.status === 1 ? <Events event={event} /> : null
+                )}
+              </div>
             </div>
           </div>
         </div>

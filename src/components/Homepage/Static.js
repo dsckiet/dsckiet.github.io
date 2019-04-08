@@ -2,10 +2,12 @@ import React, { Component } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import Events from "../Events/Events";
 import Featured from "../Featured/Featured";
+import sortBy from "sort-by";
 
 export default class Static extends Component {
   render() {
     const { story, events } = this.props;
+    events.sort(sortBy("startDate"));
 
     return (
       <div className="fluid-container" style={{ paddingBottom: "0" }}>

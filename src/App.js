@@ -4,7 +4,6 @@ import Homepage from "./components/Homepage/Homepage";
 import EventsPage from "./components/EventsPage/EventsPage";
 import About from "./components/About/About";
 import TeamPage from "./components/TeamPage/TeamPage";
-import * as websiteApi from "./utils/websiteApi";
 class App extends Component {
   componentDidMount() {
     // websiteApi.getAbout().then(res => {
