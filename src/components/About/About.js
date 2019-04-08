@@ -43,7 +43,10 @@ export default class About extends Component {
                   KIET.
                 </p>
 
-                <a href="#" class="btn btn-primary prime_btn">
+                <a
+                  href="https://www.google.com"
+                  class="btn btn-primary prime_btn"
+                >
                   Become A Member
                 </a>
               </div>

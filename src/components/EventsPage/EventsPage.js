@@ -8,18 +8,18 @@ export default class EventsPage extends Component {
     return (
       <div>
         <Navbar />
-        <div class="fluid-container" style={{ paddingBottom: "0" }}>
-          <div class="container ">
-            <h2 class="title mt-4">DSC KIET's Events</h2>
-            <p class="description">
+        <div className="fluid-container" style={{ paddingBottom: "0" }}>
+          <div className="container ">
+            <h2 className="title mt-4">DSC KIET's Events</h2>
+            <p className="description">
               Questions? Please contact dsckiet@gmail.com.
             </p>
           </div>
 
           <div>
-            <div class="container pt-4 pb-4">
-              <h4 class="title">Upcoming Events</h4>
-              <p class="description">
+            <div className="container pt-4 pb-4">
+              <h4 className="title">Upcoming Events</h4>
+              <p className="description">
                 Our events are open to newbies, students and developers who are
                 interested in cutting-edge technologies or use them as part of
                 their projects.
@@ -29,12 +29,12 @@ export default class EventsPage extends Component {
             </div>
           </div>
 
-          <div class="featured">
-            <div class="container pt-4 pb-4">
-              <h5 class="title" style={{ color: "#444444" }}>
+          <div className="featured">
+            <div className="container pt-4 pb-4">
+              <h5 className="title" style={{ color: "#444444" }}>
                 Directory of Past Events
               </h5>
-              <p class="description">
+              <p className="description">
                 Events are listed in reverse chronological order by date.
                 <br />
                 Here are the recent 10 events. To know more about the past

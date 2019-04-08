@@ -13,7 +13,11 @@ export default class Footer extends Component {
                   About
                 </h5>
                 <li>
-                  <a href="http://kiet.edu/" target="_blank">
+                  <a
+                    href="http://kiet.edu/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     KIET Group of Institutions
                   </a>
                 </li>
@@ -21,12 +25,13 @@ export default class Footer extends Component {
                   <a
                     href="https://developers.google.com/programs/dsc/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Developer Student Clubs
                   </a>
                 </li>
                 <li>
-                  <Link href="/">DSC KIET</Link>
+                  <Link to="/">DSC KIET</Link>
                 </li>
                 <li>Become A Member</li>
               </div>
@@ -36,7 +41,11 @@ export default class Footer extends Component {
                   Resources
                 </h5>
                 <li>
-                  <a href="http://github.com/dsckiet" target="_blank">
+                  <a
+                    href="http://github.com/dsckiet"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     github.com/dsckiet
                   </a>
                 </li>
@@ -49,17 +58,29 @@ export default class Footer extends Component {
                   Contact
                 </h5>
                 <li>
-                  <a href="mailto:dsckiet@gmail.com" target="_blank">
+                  <a
+                    href="mailto:dsckiet@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     dsckiet@gmail.com
                   </a>
                 </li>
                 <li>
-                  <a href="http://medium.com/@dsckiet" target="_blank">
+                  <a
+                    href="http://medium.com/@dsckiet"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     medium.com/@dsckiet
                   </a>
                 </li>
                 <li>
-                  <a href="http://facebook.com/dsckiet/" target="_blank">
+                  <a
+                    href="http://facebook.com/dsckiet/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     fb.me/dsckiet
                   </a>
                 </li>

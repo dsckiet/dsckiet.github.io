@@ -2,16 +2,22 @@ import React, { Component } from "react";
 
 export default class Member extends Component {
   render() {
+    const { profile } = this.props;
+    const photoUrl = process.env.REACT_APP_PHOTO_URL;
     return (
-      <div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center member">
-        <div class="card p-4 text-center">
-          <img src="../assets/images/logo.png" class="team-member" alt="" />
-          <h6 class="title">Aakash Goel</h6>
+      <div className="col-lg-3 col-md-4 col-sm-6 col-6 text-center member">
+        <div className="card p-4 text-center">
+          <img
+            src={`${photoUrl}${profile.photo.slice(1)}`}
+            className="team-member"
+            alt=""
+          />
+          <h6 className="title">{profile.name}</h6>
           <p
-            class="description"
+            className="description"
             style={{ paddingTop: "0", marginTop: "0", marginBottom: "8px" }}
           >
-            DSC Lead
+            {profile.role}
           </p>
           <div
             style={{
@@ -20,21 +26,26 @@ export default class Member extends Component {
               marginTop: "0"
             }}
           >
-            <a href="">
-              <i class="fa fa-envelope" />
+            <a href={"mailto:" + profile.email}>
+              <i className="fa fa-envelope" />
             </a>
-            <a href="">
-              <i class="fab fa-linkedin-in" />
+            <a href={profile.linkedin}>
+              <i className="fab fa-linkedin-in" />
             </a>
-            <a href="">
-              <i class="fa fa-link" />
+            <a href={profile.github}>
+              <i className="fab fa-github" />
             </a>
-            <a href="">
-              <i class="fab fa-github" />
-            </a>
-            <a href="">
-              <i class="fab fa-twitter" />
-            </a>
+
+            {profile.twitter !== "" ? (
+              <a href={profile.twitter}>
+                <i className="fab fa-twitter" />
+              </a>
+            ) : null}
+            {profile.website !== "" ? (
+              <a href={profile.website}>
+                <i className="fa fa-link" />
+              </a>
+            ) : null}
           </div>
         </div>
       </div>

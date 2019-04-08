@@ -32,7 +32,10 @@ export default class Featured extends Component {
                     Commodi, et!
                   </p>
 
-                  <a href="" className="btn btn-primary prime_btn">
+                  <a
+                    href="https://www.google.com"
+                    className="btn btn-primary prime_btn"
+                  >
                     some link
                   </a>
                 </div>
