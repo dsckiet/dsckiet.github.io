@@ -36,7 +36,10 @@ export default class Static extends Component {
               <Link to="/" className="btn btn-primary prime_btn">
                 Become A Member
               </Link>
-              <Link to="/" className="btn btn-outline-info sec_btn">
+              <Link
+                to="/solution-challenge"
+                className="btn btn-outline-info sec_btn"
+              >
                 DSC Solution Challenge
               </Link>
             </div>
@@ -143,16 +146,21 @@ export default class Static extends Component {
                   programmers & hackers in and around the Campus. The technology
                   awareness is main goal for first few years of the group.
                 </p>
-                <Link to="/" className="btn btn-outline-dark custom_btn">
+                <a
+                  href="http://facebook.com/dsckiet/"
+                  className="btn btn-outline-dark custom_btn"
+                >
                   Facebook Page
-                </Link>
-                <Link
-                  to="/"
+                </a>
+                <a
+                  href="https://github.com/dsckiet"
                   className="btn btn-outline-dark sec_btn custom_btn"
                   style={{ background: "#fff", color: "#4C4A78" }}
+                  target="__blank"
+                  rel="noopener noreferer"
                 >
                   GitHub Handle
-                </Link>
+                </a>
                 <br />
                 <br />
                 <Link to="/" style={{ color: "#fff", fontSize: "14px" }}>

@@ -25,11 +25,8 @@ export default class Featured extends Component {
                   </h5>
                   <p className="description">{this.props.story.description}</p>
 
-                  <a
-                    href="https://www.google.com"
-                    className="btn btn-primary prime_btn"
-                  >
-                    some link
+                  <a href="/" className="btn btn-primary prime_btn">
+                    See More
                   </a>
                 </div>
               </div>

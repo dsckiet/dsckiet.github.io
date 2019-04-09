@@ -26,23 +26,39 @@ export default class Member extends Component {
               marginTop: "0"
             }}
           >
-            <a href={"mailto:" + profile.email}>
+            <a
+              href={"mailto:" + profile.email}
+              target="__blank"
+              rel="noopener noreferer"
+            >
               <i className="fa fa-envelope" />
             </a>
-            <a href={profile.linkedin}>
+            <a
+              href={profile.linkedin}
+              target="__blank"
+              rel="noopener noreferer"
+            >
               <i className="fab fa-linkedin-in" />
             </a>
-            <a href={profile.github}>
+            <a href={profile.github} target="__blank" rel="noopener noreferer">
               <i className="fab fa-github" />
             </a>
 
             {profile.twitter !== "" ? (
-              <a href={profile.twitter}>
+              <a
+                href={profile.twitter}
+                target="__blank"
+                rel="noopener noreferer"
+              >
                 <i className="fab fa-twitter" />
               </a>
             ) : null}
             {profile.website !== "" ? (
-              <a href={profile.website}>
+              <a
+                href={profile.website}
+                target="__blank"
+                rel="noopener noreferer"
+              >
                 <i className="fa fa-link" />
               </a>
             ) : null}
