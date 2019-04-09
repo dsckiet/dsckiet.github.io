@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// const apiUrl = process.env.REACT_APP_API_URL;
-const apiUrl = "http://dsckiet.herokuapp.com/api/v1";
+const apiUrl = process.env.REACT_APP_API_URL;
+// const apiUrl = "http://dsckiet.herokuapp.com/api/v1";
 
 export const getIndex = () =>
   axios.get(`${apiUrl}/index`).then(res => res.data);
