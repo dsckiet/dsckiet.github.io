@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 export default class Navbar extends Component {
@@ -25,24 +26,41 @@ export default class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto nav justify-content-end custom_nav">
               <li className="nav-item">
-                <Link className="nav-link active" to="/">
+                <NavLink
+                  to="/"
+                  exact
+                  className="nav-link"
+                  activeClassName="active"
+                >
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/events">
+                <NavLink
+                  to="/events"
+                  className="nav-link"
+                  activeClassName="active"
+                >
                   Events
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/team">
+                <NavLink
+                  className="nav-link"
+                  activeClassName="active"
+                  to="/team"
+                >
                   Team
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <NavLink
+                  className="nav-link"
+                  activeClassName="active"
+                  to="/about"
+                >
                   About
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" smooth to="/#contact">

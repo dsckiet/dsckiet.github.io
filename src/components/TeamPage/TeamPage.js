@@ -13,7 +13,6 @@ export default class TeamPage extends Component {
   componentDidMount() {
     websiteApi.getTeam().then(res => {
       this.setState({ message: res.message, profiles: res.team });
-      console.log(res);
     });
   }
 
@@ -31,7 +30,9 @@ export default class TeamPage extends Component {
             <br />
             <div className="row">
               {profiles.map(profile =>
-                profile.status === 1 ? <Member profile={profile} /> : null
+                profile.status === 1 ? (
+                  <Member key={profile._id} profile={profile} />
+                ) : null
               )}
             </div>
             <br />
@@ -41,7 +42,9 @@ export default class TeamPage extends Component {
             <br />
             <div className="row">
               {profiles.map(profile =>
-                profile.status === 2 ? <Member profile={profile} /> : null
+                profile.status === 2 ? (
+                  <Member key={profile._id} profile={profile} />
+                ) : null
               )}
             </div>
           </div>

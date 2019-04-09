@@ -24,6 +24,8 @@ export default class EventsPage extends Component {
 
   render() {
     let showingPastEvents = this.state.past;
+    let showingUpcomingEvents = this.state.upcoming;
+    showingUpcomingEvents.sort(sortBy("-startDate"));
     showingPastEvents.sort(sortBy("startDate"));
     return (
       <div>
@@ -46,7 +48,7 @@ export default class EventsPage extends Component {
               </p>
               <br />
               <div className="row">
-                {showingPastEvents.map(event =>
+                {showingUpcomingEvents.map(event =>
                   event.status === 1 ? <Events event={event} /> : null
                 )}
               </div>
@@ -66,7 +68,9 @@ export default class EventsPage extends Component {
               </p>
               <div className="row">
                 {showingPastEvents.map(event =>
-                  event.status === 1 ? <Events event={event} /> : null
+                  event.status === 1 ? (
+                    <Events key={event._id} event={event} />
+                  ) : null
                 )}
               </div>
             </div>

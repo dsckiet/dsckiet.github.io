@@ -186,7 +186,9 @@ export default class Static extends Component {
             <br />
             <div className="row">
               {events.map(event =>
-                event.status === 1 ? <Events event={event} /> : null
+                event.status === 1 ? (
+                  <Events key={event._id} event={event} />
+                ) : null
               )}
             </div>
           </div>

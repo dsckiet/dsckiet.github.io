@@ -4,18 +4,39 @@ import Homepage from "./components/Homepage/Homepage";
 import EventsPage from "./components/EventsPage/EventsPage";
 import About from "./components/About/About";
 import TeamPage from "./components/TeamPage/TeamPage";
+import * as websiteAPI from "./utils/websiteApi";
 class App extends Component {
+  state = {
+    message: "",
+    story: {},
+    events: []
+  };
+
   componentDidMount() {
-    // websiteApi.getAbout().then(res => {
-    //   console.log(res);
-    // });
+    websiteAPI.getIndex().then(res => {
+      this.setState({
+        message: res.message,
+        story: res.story,
+        events: res.events
+      });
+    });
   }
+
   render() {
     return (
       <div className="App">
-        <Route exact path="/" component={Homepage} />
+        <Route
+          exact
+          path="/"
+          render={() => (
+            <Homepage story={this.state.story} events={this.state.events} />
+          )}
+        />
         <Route path="/events" component={EventsPage} />
-        <Route path="/about" component={About} />
+        <Route
+          path="/about"
+          render={() => <About story={this.state.story} />}
+        />
         <Route path="/team" component={TeamPage} />
       </div>
     );
