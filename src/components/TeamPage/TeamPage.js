@@ -22,6 +22,14 @@ export default class TeamPage extends Component {
     return (
       <div>
         <Navbar />
+        <div className="container">
+            <h2 className="title mt-4">
+                Our Team
+            </h2>
+            <p className="description">
+                We have a community of 120+ members managed by a team of highly motivated and talented developers, designers and influencers.
+            </p>
+        </div>
         <div className="about_kiet">
           <div className="container pt-4 pb-4">
             <h5 className="title" style={{ color: "white" }}>

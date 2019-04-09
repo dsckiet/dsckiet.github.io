@@ -7,6 +7,11 @@ export default class SolutionChallenge extends Component {
     return (
       <div>
         <Navbar />
+        <div className="container">
+            <h2 className="title mt-4 mb-4">
+                Google DSC Solution Challenge 2019
+            </h2>
+        </div>
         <div class="about_kiet">
           <div class="container pt-4 pb-4">
             <div class="row">
