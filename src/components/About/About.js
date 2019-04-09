@@ -45,7 +45,7 @@ export default class About extends Component {
                   KIET.
                 </p>
 
-                <a href="/" className="btn btn-primary prime_btn">
+                <a href="http://dsckiet.herokuapp.com/" className = "btn btn-primary prime_btn" >
                   Become A Member
                 </a>
               </div>

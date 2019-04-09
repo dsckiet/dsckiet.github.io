@@ -2,7 +2,9 @@ import React, { Component } from "react";
 
 export default class Featured extends Component {
   render() {
-    const photoUrl = process.env.REACT_APP_PHOTO_URL;
+    // const photoUrl = process.env.REACT_APP_PHOTO_URL;
+    const photoUrl = "http://dsckiet.herokuapp.com"
+
     return (
       <div className="featured">
         <div className="container pt-4 pb-4">

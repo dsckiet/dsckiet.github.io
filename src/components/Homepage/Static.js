@@ -7,7 +7,7 @@ import sortBy from "sort-by";
 export default class Static extends Component {
   render() {
     const { story, events } = this.props;
-    events.sort(sortBy("startDate"));
+    events.sort(sortBy("-startDate"));
 
     return (
       <div className="fluid-container" style={{ paddingBottom: "0" }}>
@@ -33,9 +33,12 @@ export default class Static extends Component {
                 various cutting-edge technologies.
               </p>
 
-              <Link to="/" className="btn btn-primary prime_btn">
+              <a className = "btn btn-primary prime_btn"
+              href = "http://dsckiet.herokuapp.com/"
+              target = "_blank"
+              rel = "noopener noreferrer">
                 Become A Member
-              </Link>
+              </a>
               <Link
                 to="/solution-challenge"
                 className="btn btn-outline-info sec_btn"
@@ -62,9 +65,12 @@ export default class Static extends Component {
                   activities which help the students connect with Google.
                 </p>
 
-                <Link to="/" className="btn btn-primary prime_btn mb-4">
+                <a href = "https://developers.google.com/programs/dsc/"
+                  target = "_blank"
+                  rel = "noopener noreferrer"
+                  className = "btn btn-primary prime_btn mb-4" >
                   Learn More
-                </Link>
+                </a>
               </div>
 
               <div className="col-lg-8 col-sm-12">
@@ -163,7 +169,7 @@ export default class Static extends Component {
                 </a>
                 <br />
                 <br />
-                <Link to="/" style={{ color: "#fff", fontSize: "14px" }}>
+                <Link to="/about" style={{ color: "#fff", fontSize: "14px" }}>
                   See More about DSC KIET
                 </Link>
               </div>
@@ -187,7 +193,7 @@ export default class Static extends Component {
                 enterprises forward and solve the big problems that impact all
                 of us. We are highly committed to deliver with the best.
               </p>
-              <Link to="/" style={{ fontSize: "14px" }}>
+              <Link to="/events" style={{ fontSize: "14px" }}>
                 See More
               </Link>
             </div>
@@ -221,36 +227,10 @@ export default class Static extends Component {
             </h6>
 
             <div className="row p-3" style={{ display: "flex" }}>
-              <div className="card pt-2 pb-2" style={{ marginRight: "16px" }}>
-                <img
-                  src="./assets/images/unnamed.png"
-                  style={{ maxHeight: "60px" }}
-                  height="100%"
-                  alt=""
-                />
-              </div>
-
-              <div className="card pt-2 pb-2" style={{ marginRight: "16px" }}>
-                <img
-                  src="./assets/images/dsc.png"
-                  style={{ maxHeight: "60px" }}
-                  height="100%"
-                  alt=""
-                />
-              </div>
 
               <div className="card pt-2 pb-2" style={{ marginRight: "16px" }}>
                 <img
                   src="./assets/images/logo.png"
-                  style={{ maxHeight: "60px" }}
-                  height="100%"
-                  alt=""
-                />
-              </div>
-
-              <div className="card pt-2 pb-2" style={{ marginRight: "16px" }}>
-                <img
-                  src="./assets/images/location.svg"
                   style={{ maxHeight: "60px" }}
                   height="100%"
                   alt=""

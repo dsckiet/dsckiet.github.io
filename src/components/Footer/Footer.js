@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { HashLink as Link } from "react-router-hash-link";
+// import { HashLink as Link } from "react-router-hash-link";
 
 export default class Footer extends Component {
   render() {
@@ -31,9 +31,21 @@ export default class Footer extends Component {
                   </a>
                 </li>
                 <li>
-                  <Link to="/">DSC KIET</Link>
+                  <a
+                    href="/"
+                  >
+                    DSC KIET
+                  </a>
                 </li>
-                <li>Become A Member</li>
+                <li>
+                  <a
+                    href="http://dsckiet.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Become A Member
+                  </a>
+                </li>
               </div>
 
               <div className="col-md-3 mb-4">

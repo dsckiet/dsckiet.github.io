@@ -26,7 +26,7 @@ export default class EventsPage extends Component {
     let showingPastEvents = this.state.past;
     let showingUpcomingEvents = this.state.upcoming;
     showingUpcomingEvents.sort(sortBy("-startDate"));
-    showingPastEvents.sort(sortBy("startDate"));
+    showingPastEvents.sort(sortBy("-startDate"));
     return (
       <div>
         <Navbar />

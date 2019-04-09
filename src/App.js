@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import TeamPage from "./components/TeamPage/TeamPage";
 import * as websiteAPI from "./utils/websiteApi";
 import SolutionChallenge from "./components/SolutionChallenge/SolutionChallenge";
+
 class App extends Component {
   state = {
     message: "",

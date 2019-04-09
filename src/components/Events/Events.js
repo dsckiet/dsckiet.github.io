@@ -23,7 +23,7 @@ export default class Events extends Component {
     return (
       <div className="col-lg-3 col-sm-6 col-12">
         <div className="card" style={{ padding: "16px" }}>
-          <h5 className="title">{event.title}</h5>
+          <h6 className="title">{event.title.slice(0,20)} ..</h6>
           <span className="event_date">
             {monthNames[d.getMonth()]}
             <br />
