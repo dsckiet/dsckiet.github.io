@@ -16,6 +16,7 @@ export default class Featured extends Component {
               <div className="row">
                 <div className="col-md-3 col-sm-12">
                   <img
+                    className="storyimage"
                     src={`${photoUrl}${this.props.story.image}`}
                     width="100%"
                     alt=""

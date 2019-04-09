@@ -41,7 +41,7 @@ export default class Static extends Component {
               </a>
               <Link
                 to="/solution-challenge"
-                className="btn btn-outline-info sec_btn"
+                className="btn btn-outline-info sec_btn other_btn"
               >
                 DSC Solution Challenge
               </Link>

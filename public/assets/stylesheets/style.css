@@ -148,6 +148,19 @@ li {
   }
 }
 
+@media (max-width: 450px){
+  .other_btn{
+    margin-top: 16px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 766px) {
+  .storyimage{
+    margin-bottom: 16px;
+  }
+}
+
 .team-member {
   border-radius: 50%;
   width: 30%;
