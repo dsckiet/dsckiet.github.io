@@ -36,11 +36,13 @@ export default class Static extends Component {
               <a className = "btn btn-primary prime_btn"
               href = "http://dsckiet.herokuapp.com/"
               target = "_blank"
+              style={{marginBottom: '16px', marginRight: '16px'}}
               rel = "noopener noreferrer">
                 Become A Member
               </a>
               <Link
                 to="/solution-challenge"
+                style={{marginBottom: '16px'}}
                 className="btn btn-outline-info sec_btn other_btn"
               >
                 DSC Solution Challenge
@@ -159,13 +161,13 @@ export default class Static extends Component {
                   Facebook Page
                 </a>
                 <a
-                  href="https://github.com/dsckiet"
+                  href="https://instagram.com/dsckiet"
                   className="btn btn-outline-dark sec_btn custom_btn"
                   style={{ background: "#fff", color: "#4C4A78" }}
                   target="__blank"
                   rel="noopener noreferer"
                 >
-                  GitHub Handle
+                  Instagram Page
                 </a>
                 <br />
                 <br />
@@ -228,9 +230,18 @@ export default class Static extends Component {
 
             <div className="row p-3" style={{ display: "flex" }}>
 
-              <div className="card pt-2 pb-2" style={{ marginRight: "16px" }}>
+              <div className="card" style={{ marginRight: "16px", padding: "4px" }}>
                 <img
                   src="./assets/images/logo.png"
+                  style={{ maxHeight: "60px" }}
+                  height="100%"
+                  alt=""
+                />
+              </div>
+
+              <div className="card" style={{ marginRight: "16px", padding: "4px" }}>
+                <img
+                  src="./assets/images/logogzb.png"
                   style={{ maxHeight: "60px" }}
                   height="100%"
                   alt=""

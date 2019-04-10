@@ -96,6 +96,15 @@ export default class Footer extends Component {
                     fb.me/dsckiet
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="http://instagram.com/dsckiet/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    instagram.com/dsckiet
+                  </a>
+                </li>
               </div>
             </div>
           </div>

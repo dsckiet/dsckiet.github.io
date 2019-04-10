@@ -148,9 +148,8 @@ li {
   }
 }
 
-@media (max-width: 450px){
+@media (max-width: 600px){
   .other_btn{
-    margin-top: 16px;
     margin-left: 0;
   }
 }
