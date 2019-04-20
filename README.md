@@ -1,5 +1,4 @@
-## Official website of DSC KIET
-> https://dsckiet.tech
+## Official website of [DSC KIET](https://dsckiet.tech)
 
 ## Contributors:
 * [Rohan Mehta](http://github.com/rhnmht30)
