@@ -33,20 +33,22 @@ export default class Static extends Component {
                 various cutting-edge technologies.
               </p>
 
-              <a className = "btn btn-primary prime_btn"
-              href = "http://dsckiet.herokuapp.com/"
-              target = "_blank"
-              style={{marginBottom: '16px', marginRight: '16px'}}
-              rel = "noopener noreferrer">
+              <a
+                className="btn btn-primary prime_btn"
+                href="http://dsckiet.herokuapp.com/"
+                target="_blank"
+                style={{ marginBottom: "16px", marginRight: "16px" }}
+                rel="noopener noreferrer"
+              >
                 Become A Member
               </a>
-              <Link
+              {/* <Link
                 to="/solution-challenge"
                 style={{marginBottom: '16px'}}
                 className="btn btn-outline-info sec_btn other_btn"
               >
                 DSC Solution Challenge
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
@@ -67,10 +69,12 @@ export default class Static extends Component {
                   activities which help the students connect with Google.
                 </p>
 
-                <a href = "https://developers.google.com/programs/dsc/"
-                  target = "_blank"
-                  rel = "noopener noreferrer"
-                  className = "btn btn-primary prime_btn mb-4" >
+                <a
+                  href="https://developers.google.com/programs/dsc/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary prime_btn mb-4"
+                >
                   Learn More
                 </a>
               </div>
@@ -229,8 +233,10 @@ export default class Static extends Component {
             </h6>
 
             <div className="row p-3" style={{ display: "flex" }}>
-
-              <div className="card" style={{ marginRight: "16px", padding: "4px" }}>
+              <div
+                className="card"
+                style={{ marginRight: "16px", padding: "4px" }}
+              >
                 <img
                   src="./assets/images/logo.png"
                   style={{ maxHeight: "60px" }}
@@ -239,7 +245,10 @@ export default class Static extends Component {
                 />
               </div>
 
-              <div className="card" style={{ marginRight: "16px", padding: "4px" }}>
+              <div
+                className="card"
+                style={{ marginRight: "16px", padding: "4px" }}
+              >
                 <img
                   src="./assets/images/logogzb.png"
                   style={{ maxHeight: "60px" }}

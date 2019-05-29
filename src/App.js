@@ -43,7 +43,7 @@ class App extends Component {
         />
         <Route path="/team" component={TeamPage} />
         <Route path="/ideas" component={IdeaSharing} />
-        <Route path="/solution-challenge" component={SolutionChallenge} />
+        {/* <Route path="/solution-challenge" component={SolutionChallenge} /> */}
       </div>
     );
   }
