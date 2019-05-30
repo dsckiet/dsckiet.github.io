@@ -1,7 +1,6 @@
 import axios from "axios";
 
 const apiUrl = process.env.REACT_APP_API_URL;
-// const apiUrl = "http://dsckiet.herokuapp.com/api/v1";
 
 export const getIndex = () =>
   axios.get(`${apiUrl}/index`).then(res => res.data);
@@ -13,3 +12,9 @@ export const getEvents = () =>
 
 export const getAbout = () =>
   axios.get(`${apiUrl}/about`).then(res => res.data);
+
+export const getIdeas = () =>
+  axios.get(`${apiUrl}/ideas`).then(res => res.data);
+
+export const addIdea = payload =>
+  axios.post(`${apiUrl}/addidea`, payload).then(res => res.data);

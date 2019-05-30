@@ -5,8 +5,7 @@ import EventsPage from "./components/EventsPage/EventsPage";
 import About from "./components/About/About";
 import TeamPage from "./components/TeamPage/TeamPage";
 import * as websiteAPI from "./utils/websiteApi";
-import SolutionChallenge from "./components/SolutionChallenge/SolutionChallenge";
-import Project from "./components/Project/Project";
+import Ideas from "./components/Ideas/Ideas";
 import IdeaSharing from "./components/IdeaSharingPage/IdeaSharing";
 
 class App extends Component {
@@ -42,7 +41,8 @@ class App extends Component {
           render={() => <About story={this.state.story} />}
         />
         <Route path="/team" component={TeamPage} />
-        <Route path="/ideas" component={IdeaSharing} />
+        <Route path="/ideas" component={Ideas} />
+        <Route path="/add-idea" component={IdeaSharing} />
         {/* <Route path="/solution-challenge" component={SolutionChallenge} /> */}
       </div>
     );
