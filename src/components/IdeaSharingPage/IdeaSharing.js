@@ -48,56 +48,56 @@ export default class IdeaSharing extends Component {
       <div>
         <Navbar />
         <div className="fluid-container" style={{ paddingBottom: "0" }}>
-          <div class="container">
-            <div class="idea_card mt-4">
+          <div className="container">
+            <div className="idea_card mt-4">
               <div
-                class="row"
+                className="row"
                 style={{ marginRight: "-16px", marginLeft: "-16px" }}
               >
-                <div class="col-lg-4 col-md-5 col-12 pb-4 custom_back">
-                  <h4 class="idea_title mt-4 mb-4">
+                <div className="col-lg-4 col-md-5 col-12 pb-4 custom_back">
+                  <h4 className="idea_title mt-4 mb-4">
                     Share your{" "}
-                    <span class="idea_highlight">
+                    <span className="idea_highlight">
                       <u>Idea</u>
                     </span>
                     .
                   </h4>
                   <form action="/action_page.php">
-                    <div class="form-group">
-                      <label for="name">Name:</label>
+                    <div className="form-group">
+                      <label htmlFor="name">Name:</label>
                       <input
                         name="name"
                         value={this.state.name}
                         onChange={this.handleChange}
                         type="text"
-                        class="form-control"
+                        className="form-control"
                         id="name"
                       />
                     </div>
-                    <div class="form-group">
-                      <label for="email">Email address:</label>
+                    <div className="form-group">
+                      <label htmlFor="email">Email address:</label>
                       <input
                         name="email"
                         value={this.state.email}
                         onChange={this.handleChange}
                         type="email"
-                        class="form-control"
+                        className="form-control"
                         id="email"
                       />
                     </div>
-                    <div class="form-group">
-                      <label for="idea_title">Idea Title:</label>
+                    <div className="form-group">
+                      <label htmlFor="idea_title">Idea Title:</label>
                       <input
                         name="title"
                         value={this.state.title}
                         onChange={this.handleChange}
                         type="text"
-                        class="form-control"
+                        className="form-control"
                         id="idea_title"
                       />
                     </div>
-                    <div class="form-group">
-                      <label for="idea_desc">Idea Description:</label>
+                    <div className="form-group">
+                      <label htmlFor="idea_desc">Idea Description:</label>
                       <textarea
                         name="description"
                         value={this.state.description}
@@ -105,38 +105,38 @@ export default class IdeaSharing extends Component {
                         rows="4"
                         cols="50"
                         type=""
-                        class="form-control"
+                        className="form-control"
                         id="idea_desc"
                       />
                     </div>
-                    <div class="form-group">
-                      <label for="tech">Technologies: </label>
+                    <div className="form-group">
+                      <label htmlFor="tech">Technologies: </label>
                       <input
                         name="technology"
                         value={this.state.technology}
                         onChange={this.handleChange}
                         type="text"
-                        class="form-control"
+                        className="form-control"
                         id="idea_title"
                       />
                     </div>
                     <button
                       onClick={this.handleSubmit}
                       type="submit"
-                      class="btn idea_submit"
+                      className="btn idea_submit"
                     >
                       Submit
                     </button>
                   </form>
                 </div>
                 <div
-                  class="col-lg-8 col-md-7 col-12"
+                  className="col-lg-8 col-md-7 col-12"
                   style={{ margin: "0", padding: "0" }}
                 >
                   <img
                     src="./assets/images/ideasharing.jpg"
                     width="100%"
-                    class="idea__image"
+                    className="idea__image"
                     height="100%"
                     alt=""
                   />
