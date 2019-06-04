@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { HashLink as Link } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 export default class Footer extends Component {
   render() {
@@ -31,11 +31,7 @@ export default class Footer extends Component {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/"
-                  >
-                    DSC KIET
-                  </a>
+                  <Link to="/code-of-conduct">Code Of Conduct</Link>
                 </li>
                 <li>
                   <a

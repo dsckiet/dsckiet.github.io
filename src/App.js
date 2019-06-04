@@ -7,6 +7,7 @@ import TeamPage from "./components/TeamPage/TeamPage";
 import * as websiteAPI from "./utils/websiteApi";
 import Ideas from "./components/Ideas/Ideas";
 import IdeaSharing from "./components/IdeaSharingPage/IdeaSharing";
+import coc from "./components/COC/coc";
 
 class App extends Component {
   state = {
@@ -43,6 +44,7 @@ class App extends Component {
         <Route path="/team" component={TeamPage} />
         <Route path="/ideas" component={Ideas} />
         <Route path="/add-idea" component={IdeaSharing} />
+        <Route path="/code-of-conduct" component={coc} />
         {/* <Route path="/solution-challenge" component={SolutionChallenge} /> */}
       </div>
     );
