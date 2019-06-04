@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Homepage from "./components/Homepage/Homepage";
 import EventsPage from "./components/EventsPage/EventsPage";
 import About from "./components/About/About";
@@ -31,6 +31,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+  <Switch>
         <Route
           exact
           path="/"
@@ -49,6 +50,7 @@ class App extends Component {
         <Route path="/code-of-conduct" component={coc} />
         <Route path="*" component={NotFound} />
         {/* <Route path="/solution-challenge" component={SolutionChallenge} /> */}
+        </Switch>
       </div>
     );
   }
