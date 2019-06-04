@@ -8,6 +8,8 @@ import * as websiteAPI from "./utils/websiteApi";
 import Ideas from "./components/Ideas/Ideas";
 import IdeaSharing from "./components/IdeaSharingPage/IdeaSharing";
 import coc from "./components/COC/coc";
+import NotFound from "./components/404/NotFound";
+
 
 class App extends Component {
   state = {
@@ -45,6 +47,7 @@ class App extends Component {
         <Route path="/ideas" component={Ideas} />
         <Route path="/add-idea" component={IdeaSharing} />
         <Route path="/code-of-conduct" component={coc} />
+        <Route path="*" component={NotFound} />
         {/* <Route path="/solution-challenge" component={SolutionChallenge} /> */}
       </div>
     );
