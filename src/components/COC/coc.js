@@ -71,6 +71,7 @@ export default class coc extends Component {
                 Keep Learning!
                 <br />
                 Keep Growing!
+                <hr/>
               </p>
             </div>
           </div>
