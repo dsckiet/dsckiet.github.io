@@ -32,16 +32,25 @@ export default class Static extends Component {
                 around campus to learn, share and get productive using the
                 various cutting-edge technologies.
               </p>
-
               <a
+                href="http://bit.ly/apply4dsc"
                 className="btn btn-primary prime_btn"
-                href="http://dsckiet.herokuapp.com/"
                 target="_blank"
                 style={{ marginBottom: "16px", marginRight: "16px" }}
                 rel="noopener noreferrer"
               >
-                Become A Member
+                Recruitements
               </a>
+              <br />
+              <button
+                href="http://bit.ly/getting-started-with-cp"
+                className="btn btn-primary prime_btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Coding Contests
+              </button>
+
               {/* <Link
                 to="/solution-challenge"
                 style={{marginBottom: '16px'}}

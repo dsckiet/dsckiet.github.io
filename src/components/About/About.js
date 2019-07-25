@@ -45,9 +45,24 @@ export default class About extends Component {
                   KIET.
                 </p>
 
-                <a href="http://dsckiet.herokuapp.com/" className = "btn btn-primary prime_btn" >
-                  Become A Member
+                <a
+                  href="http://bit.ly/apply4dsc"
+                  className="btn btn-primary prime_btn"
+                  target="_blank"
+                  style={{ marginBottom: "16px", marginRight: "16px" }}
+                  rel="noopener noreferrer"
+                >
+                  Recruitements
                 </a>
+                <br />
+                <button
+                  href="http://bit.ly/getting-started-with-cp"
+                  className="btn btn-primary prime_btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Coding Contests
+                </button>
               </div>
             </div>
           </div>
