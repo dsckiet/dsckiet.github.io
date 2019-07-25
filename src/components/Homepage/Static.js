@@ -33,23 +33,23 @@ export default class Static extends Component {
                 various cutting-edge technologies.
               </p>
               <a
-                href="http://bit.ly/apply4dsc"
+                href="https://bit.ly/apply4dsc"
                 className="btn btn-primary prime_btn"
                 target="_blank"
                 style={{ marginBottom: "16px", marginRight: "16px" }}
                 rel="noopener noreferrer"
               >
-                Recruitements
+                Recruitments
               </a>
-              <br />
-              <button
-                href="http://bit.ly/getting-started-with-cp"
+              <a
+                href="https://bit.ly/getting-started-with-cp"
                 className="btn btn-primary prime_btn"
                 target="_blank"
+                style={{ marginBottom: "16px", marginRight: "16px" }}
                 rel="noopener noreferrer"
               >
                 Coding Contests
-              </button>
+              </a>
 
               {/* <Link
                 to="/solution-challenge"

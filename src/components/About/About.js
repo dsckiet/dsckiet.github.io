@@ -52,17 +52,17 @@ export default class About extends Component {
                   style={{ marginBottom: "16px", marginRight: "16px" }}
                   rel="noopener noreferrer"
                 >
-                  Recruitements
+                  Recruitments
                 </a>
-                <br />
-                <button
+                <a
                   href="http://bit.ly/getting-started-with-cp"
                   className="btn btn-primary prime_btn"
                   target="_blank"
+                  style={{ marginBottom: "16px", marginRight: "16px" }}
                   rel="noopener noreferrer"
                 >
                   Coding Contests
-                </button>
+                </a>
               </div>
             </div>
           </div>
