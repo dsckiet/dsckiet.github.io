@@ -15,7 +15,7 @@ class LeaderCard extends Component {
           <div className="col-6">
             <span className="rank">Rank {rank}</span>
             <br />
-            <span className="name">{hacker}</span>
+            <a href={`https://hackerrank.com/profile/${hacker}`} className="name">{hacker}</a>
           </div>
           <div className="col-3">
             <span style={{ fontSize: "0.8em" }}>
