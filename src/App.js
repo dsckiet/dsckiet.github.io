@@ -9,6 +9,7 @@ import Ideas from "./components/Ideas/Ideas";
 import IdeaSharing from "./components/IdeaSharingPage/IdeaSharing";
 import coc from "./components/COC/coc";
 import NotFound from "./components/404/NotFound";
+import Leaderboard from "./components/Leaderboard/Leaderboard.";
 
 
 class App extends Component {
@@ -48,6 +49,7 @@ class App extends Component {
         <Route path="/ideas" component={Ideas} />
         <Route path="/add-idea" component={IdeaSharing} />
         <Route path="/code-of-conduct" component={coc} />
+        <Route path="/leaderboard" component={Leaderboard}/>
         <Route path="*" component={NotFound} />
         {/* <Route path="/solution-challenge" component={SolutionChallenge} /> */}
         </Switch>

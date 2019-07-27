@@ -18,3 +18,5 @@ export const getIdeas = () =>
 
 export const addIdea = payload =>
   axios.post(`${apiUrl}/addidea`, payload).then(res => res.data);
+
+export const gscpLeaderboard = () => axios.get(`${apiUrl}/gscpHackerrank`).then(res => res.data);

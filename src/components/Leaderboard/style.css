@@ -1,0 +1,32 @@
+.leadercard {
+    /* border: 2px solid #5576D1; */
+    background: transparent;
+}
+
+h5{
+    color: #444444;
+}
+
+.name {
+    color: #444444;
+    font-weight: 500;
+    font-size: 0.8em;
+}
+
+.rank {
+    font-size: 0.8em;
+    color: #5576D1;
+    font-weight: 500;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.score{
+    color: #5576D1;
+    font-weight: 600;
+}
+
+.level {
+    color: #FF5696;
+    font-weight: 600;
+}

@@ -48,6 +48,15 @@ export default class Navbar extends Component {
                 <NavLink
                   className="nav-link"
                   activeClassName="active"
+                  to="/leaderboard"
+                >
+                  Leaderboard
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  className="nav-link"
+                  activeClassName="active"
                   to="/team"
                 >
                   Team
