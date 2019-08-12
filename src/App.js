@@ -10,7 +10,7 @@ import IdeaSharing from "./components/IdeaSharingPage/IdeaSharing";
 import coc from "./components/COC/coc";
 import NotFound from "./components/404/NotFound";
 import Leaderboard from "./components/Leaderboard/Leaderboard.";
-
+import Gallery from "./components/Gallery/Gallery";
 
 class App extends Component {
   state = {
@@ -32,26 +32,27 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-  <Switch>
-        <Route
-          exact
-          path="/"
-          render={() => (
-            <Homepage story={this.state.story} events={this.state.events} />
-          )}
-        />
-        <Route path="/events" component={EventsPage} />
-        <Route
-          path="/about"
-          render={() => <About story={this.state.story} />}
-        />
-        <Route path="/team" component={TeamPage} />
-        <Route path="/ideas" component={Ideas} />
-        <Route path="/add-idea" component={IdeaSharing} />
-        <Route path="/code-of-conduct" component={coc} />
-        <Route path="/leaderboard" component={Leaderboard}/>
-        <Route path="*" component={NotFound} />
-        {/* <Route path="/solution-challenge" component={SolutionChallenge} /> */}
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => (
+              <Homepage story={this.state.story} events={this.state.events} />
+            )}
+          />
+          <Route path="/events" component={EventsPage} />
+          <Route
+            path="/about"
+            render={() => <About story={this.state.story} />}
+          />
+          <Route path="/team" component={TeamPage} />
+          <Route path="/ideas" component={Ideas} />
+          <Route path="/add-idea" component={IdeaSharing} />
+          <Route path="/code-of-conduct" component={coc} />
+          <Route path="/leaderboard" component={Leaderboard} />
+          <Route path="/gallery" component={Gallery} />
+          <Route path="*" component={NotFound} />
+          {/* <Route path="/solution-challenge" component={SolutionChallenge} /> */}
         </Switch>
       </div>
     );

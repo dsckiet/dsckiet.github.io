@@ -3,6 +3,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import Events from "../Events/Events";
 import Featured from "../Featured/Featured";
 import sortBy from "sort-by";
+import Gallery from "../Gallery/Gallery";
 
 export default class Static extends Component {
   render() {
@@ -32,7 +33,7 @@ export default class Static extends Component {
                 around campus to learn, share and get productive using the
                 various cutting-edge technologies.
               </p>
-              <a
+              {/* <a
                 href="https://bit.ly/apply4dsc"
                 className="btn btn-primary prime_btn"
                 target="_blank"
@@ -40,7 +41,7 @@ export default class Static extends Component {
                 rel="noopener noreferrer"
               >
                 Recruitments
-              </a>
+              </a> */}
               <a
                 href="https://bit.ly/getting-started-with-cp"
                 className="btn btn-primary prime_btn"
@@ -223,6 +224,7 @@ export default class Static extends Component {
           </div>
         </div>
 
+        <Gallery/>
         <Featured story={story} />
 
         <div className="partners">
