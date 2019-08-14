@@ -33,15 +33,15 @@ export default class Static extends Component {
                 around campus to learn, share and get productive using the
                 various cutting-edge technologies.
               </p>
-              {/* <a
-                href="https://bit.ly/apply4dsc"
+              <a
+                href="./assets/documents/dsc_recruitment_list.pdf"
                 className="btn btn-primary prime_btn"
                 target="_blank"
                 style={{ marginBottom: "16px", marginRight: "16px" }}
                 rel="noopener noreferrer"
               >
-                Recruitments
-              </a> */}
+                Recruitment Result
+              </a>
               <a
                 href="https://bit.ly/getting-started-with-cp"
                 className="btn btn-primary prime_btn"
@@ -263,6 +263,18 @@ export default class Static extends Component {
                 <img
                   src="./assets/images/logogzb.png"
                   style={{ maxHeight: "60px" }}
+                  height="100%"
+                  alt=""
+                />
+              </div>
+
+              <div
+                className="card"
+                style={{ marginRight: "16px", padding: "4px" }}
+              >
+                <img
+                  src="./assets/images/angrybaaz.png"
+                  style={{ maxHeight: "60px", padding: 20 }}
                   height="100%"
                   alt=""
                 />
