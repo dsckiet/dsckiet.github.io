@@ -33,15 +33,13 @@ export default class Static extends Component {
                 around campus to learn, share and get productive using the
                 various cutting-edge technologies.
               </p>
-              <a
-                href="./assets/documents/dsc_recruitment_list.pdf"
-                className="btn btn-primary prime_btn"
-                target="_blank"
+              <Link
+                to="/study-jam"
+                className="btn btn-danger prime_btn_red"
                 style={{ marginBottom: "16px", marginRight: "16px" }}
-                rel="noopener noreferrer"
               >
-                Recruitment Result
-              </a>
+                Study Jam
+              </Link>
               <a
                 href="https://bit.ly/getting-started-with-cp"
                 className="btn btn-primary prime_btn"
@@ -224,7 +222,7 @@ export default class Static extends Component {
           </div>
         </div>
 
-        <Gallery/>
+        <Gallery />
         <Featured story={story} />
 
         <div className="partners">

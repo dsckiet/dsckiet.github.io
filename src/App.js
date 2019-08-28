@@ -11,6 +11,7 @@ import coc from "./components/COC/coc";
 import NotFound from "./components/404/NotFound";
 import Leaderboard from "./components/Leaderboard/Leaderboard.";
 import Gallery from "./components/Gallery/Gallery";
+import form from "./components/StudyJamForm/form";
 
 class App extends Component {
   state = {
@@ -51,6 +52,8 @@ class App extends Component {
           <Route path="/code-of-conduct" component={coc} />
           <Route path="/leaderboard" component={Leaderboard} />
           <Route path="/gallery" component={Gallery} />
+          <Route path="/study-jam" component={form} />
+
           <Route path="*" component={NotFound} />
           {/* <Route path="/solution-challenge" component={SolutionChallenge} /> */}
         </Switch>

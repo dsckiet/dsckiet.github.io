@@ -42,6 +42,18 @@ a:hover {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.23);
 }
 
+.prime_btn_red {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f1f1f1;
+  background: red;
+  padding: 8px 16px;
+  border: 0;
+  transition: 0.3s all ease;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.23);
+}
+
+.prime_btn_red:hover,
 .prime_btn:hover,
 .sec_btn:hover,
 .custom_btn:hover {
@@ -148,14 +160,14 @@ li {
   }
 }
 
-@media (max-width: 600px){
-  .other_btn{
+@media (max-width: 600px) {
+  .other_btn {
     margin-left: 0;
   }
 }
 
 @media (max-width: 766px) {
-  .storyimage{
+  .storyimage {
     margin-bottom: 16px;
   }
 }
