@@ -1,0 +1,52 @@
+.main {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: #4285f4;
+}
+
+.heading {
+  font-weight: bold;
+}
+
+.dev {
+  text-decoration: underline;
+  text-decoration-line: overline;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.open {
+  background-color: #f4b400;
+  font-size: 20px;
+}
+
+.and {
+  background-color: #db4437;
+  font-size: 20px;
+}
+
+.ml {
+  background-color: #4285f4;
+  font-size: 20px;
+}
+
+.design {
+  background-color: #0f9d58;
+  font-size: 20px;
+}
+
+.card {
+  border: 4px solid #4285f4;
+}
+
+.register_btn {
+  background-color: white;
+  font-size: 18px;
+  color: #4285f4;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+}
