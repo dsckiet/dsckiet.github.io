@@ -100,10 +100,11 @@ const Form = () => {
                     Welcome to{" "}
                     <span className={classes.dev}>
                       DEV <span style={{ color: "#DB4437" }}>i</span>
-                      <span style={{ color: "#0F9D58" }}>O</span>
+                      <span style={{ color: "#0F9D58" }}>O</span>'19
                     </span>
                   </h2>
-                  <p style={{ color: "#707070" }}>
+                  <br></br>
+                  <p style={{ color: "#444", fontSize: "16px" }}>
                     Join us on 31st August to kickstart your <br /> developer
                     career. Developer Student Clubs <br /> powered by{" "}
                     <span style={{ color: "#4285f4" }}>G</span>
@@ -113,54 +114,59 @@ const Form = () => {
                     <span style={{ color: "#0F9D58" }}>l</span>
                     <span style={{ color: "#DB4437" }}>e</span> Developers is
                     organising <br /> sessions on different technologies.
+
+                    <br></br><br></br>
+
+                    For any issue, feel free to contact us on dsckiet@gmail.com or 8791431819
                   </p>
                   <br />
                   <h2 className={classes.heading}>Agenda</h2>
+                  <br></br>
                   <span
-                    className={`badge badge-primary ${classes.open} pl-3 pr-3 pt-2 pb-3 mb-2 mr-2`}
+                    className={`badge badge-primary ${classes.open} pl-3 pr-3 pt-2 pb-2 mb-2 mr-2`}
                   >
                     open source
                   </span>
                   <span
-                    className={`badge badge-primary ${classes.and} pl-3 pr-3 pt-2 pb-3 mb-2 mr-2`}
+                    className={`badge badge-primary ${classes.and} pl-3 pr-3 pt-2 pb-2 mb-2 mr-2`}
                   >
                     android
                   </span>
                   <span
-                    className={`badge badge-primary ${classes.ml} pl-3 pr-3 pt-2 pb-3 mb-2 mr-2`}
+                    className={`badge badge-primary ${classes.ml} pl-3 pr-3 pt-2 pb-2 mb-2 mr-2`}
                   >
                     ml/ai
                   </span>
                   <br />
                   <span
-                    className={`badge badge-primary ${classes.and} pl-3 pr-3 pt-2 pb-3 mb-2  mr-2`}
+                    className={`badge badge-primary ${classes.and} pl-3 pr-3 pt-2 pb-2 mb-2  mr-2`}
                   >
                     web
                   </span>
                   <span
-                    className={`badge badge-primary ${classes.design} pl-3 pr-3 pt-2 pb-3 mb-2 mr-2`}
+                    className={`badge badge-primary ${classes.design} pl-3 pr-3 pt-2 pb-2 mb-2 mr-2`}
                   >
                     designing
                   </span>
                   <span
-                    className={`badge badge-primary ${classes.open} pl-3 pr-3 pt-2 pb-3 mb-2 mr-2`}
+                    className={`badge badge-primary ${classes.open} pl-3 pr-3 pt-2 pb-2 mb-2 mr-2`}
                   >
                     startup
                   </span>
                   <br />
                   <span
-                    className={`badge badge-primary ${classes.ml} pl-3 pr-3 pt-2 pb-3 mb-2 mr-2`}
+                    className={`badge badge-primary ${classes.ml} pl-3 pr-3 pt-2 pb-2 mb-2 mr-2`}
                   >
                     programming
                   </span>
                   <span
-                    className={`badge badge-primary ${classes.design} pl-3 pr-3 pt-2 pb-3 mb-2 mr-2`}
+                    className={`badge badge-primary ${classes.design} pl-3 pr-3 pt-2 pb-2 mb-2 mr-2`}
                   >
                     cloud
                   </span>
                 </div>
               </div>
-              <div className="col-lg-5 col-md-12 mt-4 pt-2">
+              <div className="col-lg-5 col-md-12 mt-3 pt-2">
                 <div className={`${classes.card} p-3`}>
                   <div className="logo mb-3">
                     <img

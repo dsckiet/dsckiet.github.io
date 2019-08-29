@@ -5,13 +5,13 @@
 }
 
 .heading {
-  font-weight: bold;
+  font-weight: 900;
 }
 
-.dev {
+/* .dev {
   text-decoration: underline;
   text-decoration-line: overline;
-}
+} */
 
 p {
   font-size: 20px;
@@ -20,33 +20,47 @@ p {
 
 .open {
   background-color: #f4b400;
-  font-size: 20px;
+  border-radius: 32px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .and {
   background-color: #db4437;
-  font-size: 20px;
+  border-radius: 32px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .ml {
   background-color: #4285f4;
-  font-size: 20px;
+  border-radius: 32px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .design {
   background-color: #0f9d58;
-  font-size: 20px;
+  border-radius: 32px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   border: 4px solid #4285f4;
 }
 
 .register_btn {
   background-color: white;
-  font-size: 18px;
+  font-size: 16px;
   color: #4285f4;
   font-weight: bold;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.badges { 
+  border-radius: 50%;
 }
